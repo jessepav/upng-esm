@@ -1,6 +1,9 @@
 {
   "name": "@jpavel/upng-esm",
   "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "An ESM build of Photopea's UPNG.js",
   "homepage": "https://github.com/jessepav/upng-esm",
   "bugs": {
