@@ -1,0 +1,18 @@
+--- upstream/UPNG.js	2026-06-14 23:13:15.644536468 -0400
++++ UPNG.mjs	2026-06-14 23:14:55.469828291 -0400
+@@ -1,6 +1,6 @@
+ 
+ 
+-var UPNG = (function() {
++const UPNG = (function() {
+ 	
+ 	var _bin = {
+ 		nextZero   : function(data,p)  {  while(data[p]!=0) p++;  return p;  },
+@@ -1223,3 +1223,7 @@
+ 	UPNG.quantize.getNearest=getNearest;
+ })();
+ 
++export {
++    UPNG,
++    UPNG as default
++};

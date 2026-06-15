@@ -1,0 +1,20 @@
+{
+  "name": "@jpavel/upng-esm",
+  "version": "1.0.0",
+  "description": "An ESM build of Photopea's UPNG.js",
+  "homepage": "https://github.com/jessepav/upng-esm",
+  "bugs": {
+    "url": "https://github.com/jessepav/upng-esm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessepav/upng-esm.git"
+  },
+  "license": "MIT",
+  "author": "Ivan Kutskir",
+  "contributors": ["Jesse Pavel <jpavel@gmail.com> (https://github.com/jessepav)"],
+  "type": "module",
+  "main": "UPNG.mjs",
+  "keywords": ["png"],
+  "files": ["README.md", "package.json", "UPNG.mjs"]
+}
