@@ -1,14 +1,16 @@
---- upstream/UPNG.js	2026-06-14 23:13:15.644536468 -0400
-+++ UPNG.mjs	2026-06-14 23:14:55.469828291 -0400
-@@ -1,6 +1,6 @@
+--- upstream/UPNG.js	2026-07-12 02:56:24.924338334 -0400
++++ UPNG.mjs	2026-07-12 12:58:52.092040725 -0400
+@@ -1,6 +1,8 @@
++import { deflate as pakoDeflate } from './deps/pako_deflate.esm.min.mjs';
  
++const pako = { deflate: pakoDeflate };
  
 -var UPNG = (function() {
 +const UPNG = (function() {
  	
  	var _bin = {
  		nextZero   : function(data,p)  {  while(data[p]!=0) p++;  return p;  },
-@@ -1223,3 +1223,7 @@
+@@ -1223,3 +1225,7 @@
  	UPNG.quantize.getNearest=getNearest;
  })();
  

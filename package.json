@@ -1,6 +1,6 @@
 {
   "name": "@jpavel/upng-esm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
@@ -19,5 +19,5 @@
   "type": "module",
   "main": "UPNG.mjs",
   "keywords": ["png"],
-  "files": ["README.md", "package.json", "UPNG.mjs"]
+  "files": ["README.md", "package.json", "UPNG.mjs", "deps/pako_deflate.esm.min.mjs"]
 }

@@ -1,4 +1,6 @@
+import { deflate as pakoDeflate } from './deps/pako_deflate.esm.min.mjs';
 
+const pako = { deflate: pakoDeflate };
 
 const UPNG = (function() {
 	
