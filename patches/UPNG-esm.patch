@@ -1,5 +1,5 @@
 --- upstream/UPNG.js	2026-07-12 02:56:24.924338334 -0400
-+++ UPNG.mjs	2026-07-12 12:58:52.092040725 -0400
++++ UPNG.mjs	2026-07-12 13:34:48.121377111 -0400
 @@ -1,6 +1,8 @@
 +import { deflate as pakoDeflate } from './deps/pako_deflate.esm.min.mjs';
  
@@ -10,6 +10,15 @@
  	
  	var _bin = {
  		nextZero   : function(data,p)  {  while(data[p]!=0) p++;  return p;  },
+@@ -919,7 +921,7 @@
+ 		var opts;  if(levelZero) opts={level:0};
+ 		
+ 		
+-		var CMPR = (data.length>10e6 && window.UZIP!=null) ? window.UZIP : pako;
++		var CMPR = (data.length>10e6 && typeof window!="undefined" && window.UZIP!=null) ? window.UZIP : pako;
+ 		
+ 		var time = Date.now();
+ 		for(var i=0; i<ftry.length; i++) {
 @@ -1223,3 +1225,7 @@
  	UPNG.quantize.getNearest=getNearest;
  })();
